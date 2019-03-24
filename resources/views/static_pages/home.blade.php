@@ -8,7 +8,7 @@
             这里有最好玩的应用推荐，欢迎留言。
         </p>
         <p>
-            <a href="#" class="btn btn-lg btn-success" role="button">现在去留言</a>
+            <a href="{{route('signup')}}" class="btn btn-lg btn-success" role="button">现在注册登录去留言</a>
         </p>
     </div>
 @endsection
