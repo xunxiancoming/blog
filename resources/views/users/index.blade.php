@@ -12,6 +12,13 @@
                     <a href="{{route('users.show',$user)}}">
                         {{$user->name}}
                     </a>
+                   @can('destroy',$user)
+                        <form action="{{route('users.destroy',$user->id)}}" method="POST" class="float-right">
+                            {{method_field('DELETE')}}
+                            {{csrf_field()}}
+                            <button type="submit" class="btn btn-danger btn-sm">删除</button>
+                        </form>
+                    @endcan
                 </div>
             @endforeach
         </div>
@@ -19,5 +26,4 @@
             {!! $users->render() !!}
         </div>
     </div>
-
 @endsection
