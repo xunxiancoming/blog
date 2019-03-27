@@ -36,6 +36,10 @@
 
                     <button type="submit" class="btn btn-primary">注册</button>
 
+                    <hr>
+                    <p>
+                        已经有账号，<a href="{{route('login')}}">点此登录</a>
+                    </p>
                 </form>
             </div>
         </div>
