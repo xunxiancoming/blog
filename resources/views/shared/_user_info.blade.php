@@ -3,15 +3,15 @@
 </a>
 <h2>{{$user->name}}</h2>
 <div class="row col-md-12 mx-auto font-weight-bold">
-    <a class="col-md-4" href="#">
+    <a class="col-md-4" href="{{route('users.followings',$user->id)}}">
         <p>{{count($user->followings)}}</p>
         <p>关注</p>
     </a>
-    <a class="col-md-4" href="#">
+    <a class="col-md-4" href="{{route('users.followers',$user->id)}}">
         <p>{{count($user->followers)}}</p>
         <p>粉丝</p>
     </a>
-    <a class="col-md-4" href="#">
+    <a class="col-md-4" href="{{route('users.show',$user->id)}}">
         <p>{{$user->statuses()->count()}}</p>
         <p>微博</p>
     </a>
