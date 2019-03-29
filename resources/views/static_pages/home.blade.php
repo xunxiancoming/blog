@@ -25,7 +25,7 @@
                 <section class="status">
                     @if($statuses->count()>0)
                         @foreach ($statuses as $status)
-                            @include('shared._status',['user'=>Auth::user()])
+                            @include('shared._status',['user'=>$status->user])
                         @endforeach
 
                         <div class="mt-5">

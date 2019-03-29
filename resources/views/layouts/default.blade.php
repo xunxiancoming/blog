@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="text-center mb-2 bg-dark text-white p-5">Copyright © 2019 腾牛信息科技有限公司</div>
+    <div class="text-center  bg-dark text-white p-4 fixed-bottom">Copyright © 2019 腾牛信息科技有限公司</div>
     <script src="{{mix('js/app.js')}}"></script>
 </body>
 </html>
